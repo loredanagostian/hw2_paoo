@@ -1,0 +1,15 @@
+/Users/loredanagostian/Desktop/hw2_paoo/src/CMakeFiles/hw2_paoo.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/CMakeFiles/package.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/CMakeFiles/package_source.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/CMakeFiles/edit_cache.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/CMakeFiles/rebuild_cache.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/Person/CMakeFiles/person_lib.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/Person/CMakeFiles/package.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/Person/CMakeFiles/package_source.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/Person/CMakeFiles/edit_cache.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/Person/CMakeFiles/rebuild_cache.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/Student/CMakeFiles/student_lib.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/Student/CMakeFiles/package.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/Student/CMakeFiles/package_source.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/Student/CMakeFiles/edit_cache.dir
+/Users/loredanagostian/Desktop/hw2_paoo/src/Student/CMakeFiles/rebuild_cache.dir

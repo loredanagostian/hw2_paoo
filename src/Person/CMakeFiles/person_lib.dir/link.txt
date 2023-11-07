@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libperson_lib.a CMakeFiles/person_lib.dir/Person.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libperson_lib.a
