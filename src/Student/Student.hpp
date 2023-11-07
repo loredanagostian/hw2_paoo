@@ -5,19 +5,22 @@
 #include <string>
 
 using namespace std;
+using namespace PersonNamespace;
 
-class Student : public Person {
-    private: 
-    char* university; 
+namespace StudentNamespace {
+    class Student : public Person {
+        private: 
+        char* university; 
 
-    public:
-    Student(string name, string address, string CNP, int age, string university);
+        public:
+        Student(string name, string address, string CNP, int age, string university);
 
-    void setUniversity(string university);
-    char* getUniversity();
+        void setUniversity(string university);
+        char* getUniversity();
 
-    // destructor
-    ~Student();
-};
+        // destructor
+        ~Student();
+    };
+}
 
 #endif

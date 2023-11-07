@@ -732,6 +732,7 @@ Student/CMakeFiles/student_lib.dir/Student.cpp.o: Student/Student.cpp \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
+  Person/InterfacePerson.hpp \
   Person/Person.hpp \
   Student/Student.hpp
 
@@ -1463,6 +1464,8 @@ Person/Person.hpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/set_intersection.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/system_clock.h:
+
+Person/InterfacePerson.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/monthday.h:
 
