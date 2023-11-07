@@ -44,6 +44,8 @@ class Person {
         // assignment operator
         Person& operator=(const Person& person);
 
+        // move constructor
+        Person(Person &&person);
 };
 
 #endif

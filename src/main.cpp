@@ -17,5 +17,10 @@ int main(){
 
     Student student = Student(person2.getName(), person2.getAddress(), person2.getCNP(), person2.getAge(), "UPT"); // init
 
+    Person person2Move(std::move(person2));
+
+    cout << "Person2's (that has been moved) name is " << person2Move.getName() << " and he/she is " << person2.getAge() << " years old.\n";
+    
+
     return 0;
 }

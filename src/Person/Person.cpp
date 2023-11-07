@@ -107,3 +107,23 @@ Person& Person::operator=(const Person& person) {
 
     return *this;
 }
+
+// Move constructor
+Person::Person(Person &&person) {
+    this->name = new char[strlen(person.name) + 1];
+    strcpy(name, person.name);
+
+    this->address = new char[strlen(person.address) + 1];
+    strcpy(address, person.address);
+
+    this->CNP = new char[strlen(person.CNP) + 1];
+    strcpy(CNP, person.CNP);
+
+    this->age = person.age;
+
+    person.name = nullptr;
+    person.address = nullptr;
+    person.CNP = nullptr;
+
+    cout << this->name << " has been moved inside the MOVE CONSTRUCTOR!\n";
+}
