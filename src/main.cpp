@@ -1,29 +1,39 @@
 #include "/Users/loredanagostian/Desktop/hw2_paoo/src/Person/Person.hpp"
 #include "/Users/loredanagostian/Desktop/hw2_paoo/src/Student/Student.hpp"
-#include <string>
+#include "/Users/loredanagostian/Desktop/hw2_paoo/src/ManagerPerson/ManagerPerson.hpp"
 #include <iostream>
+#include <vector>
+#include <memory>
 
 using namespace PersonNamespace;
 using namespace StudentNamespace;
+
 using namespace std;
 
 int main(){
-    PersonNamespace::Person person1 = PersonNamespace::Person("Andrei", "Timisoara", "123123", 24); // init
-    PersonNamespace::Person person2 = person1; // copy
-    PersonNamespace::Person person3 = person1; // copy
-    person3 = person2; // assigment
+    vector<unique_ptr<Person>> personList;
 
-    person2.setName("Matei");
-    person2.setAddress("Deva");
-    cout << "person 1: " << person1.getName() << " " << person1.getAddress() << " " << person1.getCNP() << " " << person1.getAge()<<"\n";
-    cout << "person 2: " << person2.getName() << " " << person2.getAddress() << " " << person2.getCNP() << " " << person2.getAge()<<"\n";
+    unique_ptr<PersonNamespace::Person> personUnique = std::make_unique<PersonNamespace::Person>("Andrei", "Timisoara", "123123", 24);
+    personList.push_back(std::move(personUnique));
 
-    Student student = Student(person2.getName(), person2.getAddress(), person2.getCNP(), person2.getAge(), "UPT"); // init
+    unique_ptr<PersonNamespace::Person> personUnique2 = std::make_unique<PersonNamespace::Person>("Marius", "Sag", "123321", 42);
+    personList.push_back(std::move(personUnique2));
 
-    PersonNamespace::Person person2Move(std::move(person2));
+    unique_ptr<StudentNamespace::Student> studentUnique = std::make_unique<StudentNamespace::Student>("Ion", "Deva", "000021", 22, "UPT");
+    personList.push_back(std::move(studentUnique));
 
-    cout << "Person2's (that has been moved) name is " << person2Move.getName() << " and he/she is " << person2.getAge() << " years old.\n";
-    
+    cout << "Persons List:\n";
+    for (const auto& person : personList) {
+        cout<<person->getName()<<" "<<person->getAddress()<<" "<<person->getCNP()<<" "<<person->getAge()<<" "<<endl;
+    }
+
+    auto sharedStudent = make_shared<Student>("Alex", "Deva", "012012", 30, "UVT");
+    Student s1(sharedStudent->getName(), sharedStudent->getAddress(), (sharedStudent->getCNP().substring(sharedStudent->getCNP() - 4)), sharedStudent->getAge(), "AC");
+
+    personList.push_back(std::move(sharedStudent));
+    personList.push_back(std::move(s1));
+
+
 
     return 0;
 }
