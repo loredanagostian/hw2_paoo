@@ -733,5 +733,4 @@ CMakeFiles/hw2_paoo.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Users/loredanagostian/Desktop/hw2_paoo/src/Person/InterfacePerson.hpp \
   /Users/loredanagostian/Desktop/hw2_paoo/src/Student/Student.hpp \
-  /Users/loredanagostian/Desktop/hw2_paoo/src/ManagerPerson/ManagerPerson.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/list
+  /Users/loredanagostian/Desktop/hw2_paoo/src/SharedPtr/SharedPtr.hpp
