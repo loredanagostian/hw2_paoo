@@ -15,8 +15,8 @@ int main()
     vector<unique_ptr<Person>> personList;
 
     Shared_ptr<Person> ptr1(new Person("Andrei", "Timisoara", "123123", 24));
-    cout << "--- Shared pointers ptr1 ---\n";
     cout << " ptr1's value now: " << ptr1->getAge() << endl;
+    cout << "--- Shared pointers ptr1 ---\n";
     cout << ptr1->getAge() << endl;
  
     {
@@ -43,12 +43,6 @@ int main()
  
     cout << "--- Shared pointers ptr1 ---\n";
     cout << ptr1->getAge() << endl;
-
-    unique_ptr<PersonNamespace::Person> personUnique = std::make_unique<PersonNamespace::Person>("Andrei", "Timisoara", "123123", 24);
-    personList.push_back(std::move(personUnique));
-
-    unique_ptr<PersonNamespace::Person> personUnique2 = std::make_unique<PersonNamespace::Person>("Marius", "Sag", "123321", 42);
-    personList.push_back(std::move(personUnique2));
 
     unique_ptr<PersonNamespace::Person> personUnique = std::make_unique<PersonNamespace::Person>("Andrei", "Timisoara", "123123", 24);
     personList.push_back(std::move(personUnique));
